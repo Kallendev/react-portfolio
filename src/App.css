@@ -1,0 +1,66 @@
+/* src/App.css */
+
+body {
+  background-color: black;
+  color: white;
+  font-size: large;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for flex alignment */
+.home-container {
+  display: flex;          /* Enables horizontal layout */
+  align-items: center;    /* Centers items vertically */
+  justify-content: flex-start; /* Positions items to start, with space at the end */
+  padding: 20px;
+}
+
+/* Text styling */
+.main-content {
+  flex: 1;                /* Allows this section to take available space on the left */
+  text-align: left;
+  margin-left: 20%;       /* Adjusts left margin */
+}
+
+.main-content h2 {
+  margin-top: 9%;
+  color: #ca0d8b;
+  font-size: larger;
+}
+
+.main-content h2, .main-content h3, .main-content h4 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.main-content h3, .main-content h4 {
+  font-size: 30px;
+}
+
+/* Image styling */
+.hero-section {
+  max-width: 30%;         /* Limits image section width */
+  margin-left: 0%;      /* Adds space between text and image */
+}
+
+.profile-image {
+  align-items: center;
+  width: 100%;            /* Image takes full width of hero-section */
+  height: 90%;           /* Keeps the aspect ratio */
+  border-radius: 8px;
+}
+
+h2.a{
+  text-align:center;
+  margin-top:0;
+}
+h2.pink{
+  color: pink;
+ 
+}
+h2.White{
+  color: white;
+
+  
+}

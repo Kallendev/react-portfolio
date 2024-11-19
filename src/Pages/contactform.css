@@ -1,0 +1,102 @@
+/* Overall form styling */
+.contact-form {
+  width: 80%;
+  max-width: 600px; /* Reduced max-width */
+  margin: 20px auto;
+  padding: 5px; /* Minimal padding */
+  display: flex;
+  gap: 10px; /* Tight gap between form sections */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+/* Form header */
+.contact-form h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 12px; /* Smaller header */
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* Label styling */
+.contact-form label {
+  font-weight: bold;
+  font-size: 8px; /* Extremely small label */
+  color: #555;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/* Input fields section (left side) */
+.contact-form .text-fields {
+  display: flex;
+  gap: 4px; /* Tight space between input fields */
+  flex: 1 1 60%; /* Text fields take 60% of the width */
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align input fields to the left */
+}
+
+/* Input fields and textarea styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Full width of the parent container */
+  padding: 3px 5px; /* Super tight padding */
+  font-size: 10px; /* Very small font size */
+  height: 20px; /* Super short height for input fields */
+  border: 1px solid #ccc;
+  border-radius: 2px; /* Tiny border radius */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+/* Focus and hover effects for input and textarea */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #ff69b4;
+  box-shadow: 0 0 3px rgba(255, 182, 193, 0.5); /* Softer glow */
+}
+
+/* Message field section (right side) */
+.contact-form .message-section {
+  flex: 1 1 35%; /* Message section takes 35% of the width */
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Tight space between message field and button */
+  align-items: flex-end; /* Align message field and button to the right */
+}
+
+/* Textarea specific styles (right side) */
+.contact-form .message-field {
+  width: 100%;
+  height: 40px; /* Short height for message area */
+  resize: none;
+  margin-top: 0;
+  padding: 3px 5px; /* Super tight padding */
+  font-size: 10px; /* Very small font size */
+}
+
+/* Button styling */
+.contact-form button {
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 5px 7px; /* Very small padding */
+  font-size: 10px; /* Very small font size */
+  font-weight: bold;
+  border: none;
+  border-radius: 2px; /* Tiny border radius */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+  background-color: #ff69b4;
+  transform: translateY(-1px); /* Slight lift on hover */
+  box-shadow: 0 2px 3px rgba(255, 182, 193, 0.5); /* Smaller shadow */
+}
